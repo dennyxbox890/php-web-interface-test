@@ -9,7 +9,7 @@
 .navbar a {
   float: left;
   font-size: 16px;
-  color: white;
+  color:grey;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -18,7 +18,7 @@
 /* The dropdown container */
 .dropdown {
   float: left;
-  overflow: hidden;
+  overflow: visible;
 }
 
 /* Dropdown button */
@@ -35,7 +35,7 @@
 
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: greenyellow;
 }
 
 /* Dropdown content (hidden by default) */
@@ -51,7 +51,7 @@
 
 /* Mega Menu header, if needed */
 .dropdown-content .header {
-  background: red;
+  background: greenyellow;
   padding: 16px;
   color: white;
 }
