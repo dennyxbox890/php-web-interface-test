@@ -1,3 +1,30 @@
+/*
+***** TAKING NOTES cause i'm noob *****
+
+https://developer.mozilla.org/zh-TW/docs/Web/CSS
+
+border-radius:(float)px 圓滑度
+background-color:(color code) 背景顏色
+overflow:(visible 內容溢出 hidden 不溢出 scroll 固定下拉式 auto 自動下拉)
+font-family: 字型
+float: 位置
+text-align: 字體位置
+font-size: 字體大小
+padding: 物件周圍的空位
+text-decoration: 字體裝飾
+outline: 外框
+position:擺放方式
+margin: 位置
+height: 高度
+width: 寬度
+left: 固定
+right: 固定
+*/
+/* Background */
+html {
+  background-color: #E0E0E0;
+}
+
 /* Navbar container */
 .navbar {
   overflow: hidden;
@@ -7,7 +34,7 @@
 
 /* Links inside the navbar */
 .navbar a {
-  float: left;
+  float: right;
   font-size: 16px;
   color:grey;
   text-align: center;
@@ -35,7 +62,7 @@
 
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: greenyellow;
+  background-color: #74a52b;
 }
 
 /* Dropdown content (hidden by default) */
@@ -51,7 +78,7 @@
 
 /* Mega Menu header, if needed */
 .dropdown-content .header {
-  background: greenyellow;
+  background: #74a52b;
   padding: 16px;
   color: white;
 }
@@ -66,7 +93,7 @@
   float: left;
   width: 33.33%;
   padding: 10px;
-  background-color: #ccc;
+  background-color: #cecccc;
   height: 250px;
 }
 
@@ -80,9 +107,13 @@
   text-align: left;
 }
 
+.column h3 {
+  color: black;
+}
+
 /* Add a background color on hover */
 .column a:hover {
-  background-color: #ddd;
+  background-color: #444444;
 }
 
 /* Clear floats after the columns */
