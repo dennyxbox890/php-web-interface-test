@@ -21,6 +21,10 @@ left: 固定
 right: 固定
 box-shadow: px px px px color; 陰影
 */
+.main_header {
+  font-size: 16px;
+  color: grey;
+}
 /* Background */
 html {
   background-color: #E0E0E0;
