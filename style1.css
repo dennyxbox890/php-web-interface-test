@@ -24,6 +24,7 @@ box-shadow: px px px px color; 陰影
 .main_header {
   font-size: 25px;
   color: black;
+  
 }
 /* Background */
 html {
@@ -83,6 +84,7 @@ html {
   left: 0;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  border-radius: 5px;
 }
 
 /* Mega Menu header, if needed */
