@@ -24,7 +24,7 @@ box-shadow: px px px px color; 陰影
 .main_header {
   font-size: 25px;
   color: black;
-  margin: 5px;
+  /*margin: 5px;*/
 }
 /* Background */
 html {
@@ -33,12 +33,17 @@ html {
 
 /* Navbar container */
 .navbar {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
   overflow: hidden;
   background-color: #333;
   font-family: 微軟正黑體;
-  padding-left: auto;
-  padding-right: auto;
+  padding: 0px;
+  margin: 0px;
+  top: 0px;
   border-radius: 5px;
+  
 }
 
 /* Links inside the navbar */
@@ -47,7 +52,8 @@ html {
   font-size: 16px;
   color:white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px;
+  margin: 0;
   text-decoration: none;
   font-family: 微軟正黑體;
   
@@ -118,6 +124,7 @@ html {
   height: 30%;
   border-radius: 5px;
   -webkit-font-smoothing: antialiased;
+  
 }
 
 /* Style links inside the columns */
@@ -130,6 +137,7 @@ html {
   display: block;
   /*border-radius: 5px;*/
   text-align: left;
+  
 }
 
 .column h3 {
