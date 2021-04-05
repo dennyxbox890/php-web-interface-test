@@ -143,8 +143,8 @@ html {
 }
 
 /* Clear floats after the columns */
-.row:after {
+/*.row:after {
   content: "";
   display: table;
   clear: both;
-}
+}*/
