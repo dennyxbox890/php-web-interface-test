@@ -10,7 +10,7 @@ font-family: 字型
 float: 位置
 text-align: 字體位置
 font-size: 字體大小
-padding: 物件周圍的空位
+padding: 物件周圍(左方)的空位
 text-decoration: 字體裝飾
 outline: 外框
 position:擺放方式
@@ -24,7 +24,7 @@ box-shadow: px px px px color; 陰影
 .main_header {
   font-size: 25px;
   color: black;
-  
+  margin: 5px;
 }
 /* Background */
 html {
@@ -36,24 +36,29 @@ html {
   overflow: hidden;
   background-color: #333;
   font-family: 微軟正黑體;
+  padding-left: auto;
+  padding-right: auto;
+  border-radius: 5px;
 }
 
 /* Links inside the navbar */
 .navbar a {
   float: right;
   font-size: 16px;
-  color:grey;
+  color:white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-family: 微軟正黑體;
+  
 }
 
 /* The dropdown container */
 .dropdown {
   /*position: relative;*/
   float: left;
-  overflow: visible;
+  overflow: auto;
+  /*border-radius: 5px;*/
   /*display: inline-block;*/
 }
 
@@ -70,7 +75,7 @@ html {
   margin: 0; /* Important for vertical align on mobile phones */
 }
 
-/* Add a red background color to navbar links on hover */
+/* Add a green background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: #74a52b;
 }
@@ -79,9 +84,10 @@ html {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  width: 100%;
-  left: 0;
+  /*background-color: #f9f9f9;*/
+  width: 208px;
+  overflow: hidden;
+  left: 14px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: 5px;
@@ -103,10 +109,15 @@ html {
 .column {
   font-family: 微軟正黑體;
   float: left;
-  width: 33.33%;
-  padding: 10px;
-  background-color: #cecccc;
-  height: 250px;
+  overflow: auto;
+  padding: 8px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: white;
+  width: 208px;
+  height: 30%;
+  border-radius: 5px;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Style links inside the columns */
@@ -117,6 +128,7 @@ html {
   padding: 16px;
   text-decoration: none;
   display: block;
+  /*border-radius: 5px;*/
   text-align: left;
 }
 
@@ -126,7 +138,8 @@ html {
 
 /* Add a background color on hover */
 .column a:hover {
-  background-color: #444444;
+  background-color: #202020;
+  color: white;
 }
 
 /* Clear floats after the columns */
