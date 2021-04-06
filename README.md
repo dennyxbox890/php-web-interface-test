@@ -1,2 +1,2 @@
-# php-web-interface-test
+# php-website-test
 Basically my homework.
