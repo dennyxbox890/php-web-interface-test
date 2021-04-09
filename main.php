@@ -5,10 +5,11 @@
 <link rel="stylesheet" href="style-p.css">
 </head>
 <body>
-//from https://www.w3schools.com/html/html_forms.asp
+<div class="form">
+<!--from https://www.w3schools.com/html/html_forms.asp-->
 <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
-  Name: <input type="text" name="a">
-  <input type="submit">
+  test input: <input type="text" name="a" id="text_box">
+  <input type="submit" id="submit_button">
 </form>
 
 <?php
@@ -22,6 +23,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-
+</div>
 </body>
 </html>

@@ -1,0 +1,25 @@
+/*
+https://developer.mozilla.org/zh-TW/docs/Web/CSS
+
+border-radius:(float)px 圓滑度
+background-color:(color code) 背景顏色
+overflow:(visible 內容溢出 hidden 不溢出 scroll 固定下拉式 auto 自動下拉)
+font-family: 字型
+float: 位置
+text-align: 字體位置
+font-size: 字體大小
+padding: 物件周圍(左方)的空位
+text-decoration: 字體裝飾
+outline: 外框
+position:擺放方式
+margin: 位置
+height: 高度
+width: 寬度
+left: 固定
+right: 固定
+box-shadow: px px px px color; 陰影
+*/
+
+.form{
+
+}
