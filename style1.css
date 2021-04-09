@@ -33,17 +33,15 @@ html {
 
 /* Navbar container */
 .navbar {
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-  box-sizing: border-box;         /* Opera/IE 8+ */
   overflow: hidden;
   background-color: #333;
   font-family: 微軟正黑體;
-  padding: 0px;
-  margin: 0px;
-  top: 0px;
-  border-radius: 5px;
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 /* Links inside the navbar */
@@ -156,3 +154,21 @@ html {
   display: table;
   clear: both;
 }*/
+
+#php1{
+  width: 70%;
+  height: 700px;
+  overflow: auto;
+  margin: 2% 15%;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.paragraph h2{
+  text-align: center;
+  font-family:'Segoe UI';
+}
+
+.paragraph{
+  margin-top: 60px;
+}
