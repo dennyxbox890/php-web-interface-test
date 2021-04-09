@@ -20,9 +20,22 @@ right: 固定
 box-shadow: px px px px color; 陰影
 */
 html{
-    background-color: rgb(209, 209, 209);
+    background-color: rgb(223, 223, 223);
 }
 
-.form{
+.form {
     font-family: 'Segoe UI',"微軟正黑體";
+}
+.sys_time{
+    text-align: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: visible;
+}
+hr{
+    height:1px;
+    border-width:0;
+    color:rgb(193,193,193);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color:rgb(193,193,193);
+
 }

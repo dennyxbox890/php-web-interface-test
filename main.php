@@ -5,6 +5,9 @@
 <link rel="stylesheet" href="style-p.css">
 </head>
 <body>
+
+
+
 <div class="form">
 <!--from https://www.w3schools.com/html/html_forms.asp-->
 <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
@@ -24,5 +27,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 </div>
+
+<hr>
+
+<div class="sys_time">
+    <?php 
+        echo date("Y-m-d\ne h:i");
+        sleep(1);
+    ?>
+</div>
+
 </body>
 </html>

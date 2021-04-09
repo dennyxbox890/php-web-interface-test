@@ -25,8 +25,8 @@ box-shadow: px px px px color; 陰影
   /*margin: 5px;*/
 }
 /* Background */
-html {
-  background-color: #E0E0E0;
+body {
+  background-color: #979595;
 }
 
 /* Navbar container */
@@ -79,7 +79,7 @@ html {
 
 /* Add a green background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #74a52b;
+  background-color: #8d312e;
 }
 
 /* Dropdown content (hidden by default) */
@@ -154,19 +154,17 @@ html {
 }*/
 
 #php1{
-  width: 70%;
-  height: 700px;
+  width: 96%;
+  height: 1000px;
   overflow: auto;
-  margin: 2% 15%;
+  margin: 1% 2%;
   border-radius: 5px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-.paragraph h2{
-  text-align: center;
-  font-family:'Segoe UI';
-}
+
 
 .paragraph{
   margin-top: 60px;
+  
 }
