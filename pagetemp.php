@@ -6,13 +6,9 @@
 </head>
 <body>
 
-<hr>
-<div class="sys_time">
-    <?php 
-        echo date("Y-m-d\ne h:i");
-        
-    ?>
-</div>
+
+
+
 
 </body>
 </html>

@@ -9,7 +9,7 @@
     <div class="main_title">
     </div>
     <div class="navbar">
-        <a href="http://tsj.tw/">首頁</a>
+        <a href="index.php">首頁</a>
         <a href="http://tsj.tw/">分頁1</a>
         <div class="dropdown">
         
@@ -22,7 +22,7 @@
             </div>-->
             <div class="row"></div>
               <div class="column">
-                <a href="#">連結1</a>
+                <a href="page1.php">連結1</a>
                 <a href="#">連結2</a>
                 <a href="#">連結3</a>
                 <a href="#">連結4</a>

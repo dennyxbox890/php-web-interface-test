@@ -1,0 +1,36 @@
+.form {
+    font-family: 'Segoe UI',"微軟正黑體";
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.sys_time{
+    text-align: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: visible;
+}
+hr{
+    height:1px;
+    border-width:0;
+    color:rgb(193,193,193);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color:rgb(193,193,193);
+
+}
+
+
+#php1{
+    height: 1000px;
+    overflow: auto;
+    margin: 1% 2%;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: rgb(223, 223, 223);
+    padding-top: 1%;
+}
+
+.paragraph{
+    padding-top: 4px;
+}
+.sys_time{
+    padding: 5px;
+}
