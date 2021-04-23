@@ -13,7 +13,7 @@
         <a href="http://tsj.tw/">分頁1</a>
         <div class="dropdown">
         
-          <button class="dropbtn">測試
+          <button class="dropbtn">連結
             <!--<i class="fa fa-caret-down"></i>-->
           </button>
           <div class="dropdown-content">
