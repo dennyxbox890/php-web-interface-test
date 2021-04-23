@@ -33,6 +33,7 @@
       </div>
     <div class="paragraph">
       <div  id="php1">
+        <h1 class="ex_title1">Text input test</h1>
         <div class="form">
         <!--from https://www.w3schools.com/html/html_forms.asp-->
             <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">

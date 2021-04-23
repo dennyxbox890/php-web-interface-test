@@ -35,5 +35,26 @@ hr{
     padding: 5px;
 }
 #submit_button{
-    
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-family: "微軟正黑體";
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 5px 10px;
+    background-color: black;
+    margin: 0;
+    border-radius: 5px;
+}
+#submit_button:hover{
+    transition-property: all;
+    transition-duration: 0.4s;
+    background-color: rgb(190, 6, 6);
+}
+
+.ex_title1{
+    padding-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI',"微軟正黑體";
+    font-size: 25px;
 }
