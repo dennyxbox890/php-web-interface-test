@@ -71,7 +71,7 @@ a:hover{
   transition-timing-function: ease-in-out;
 }
 /*      animation        */
-
+/*https://stackoverflow.com/questions/54702124/rainbow-text-animation-using-only-css*/
 /* The dropdown container */
 .dropdown {
   position: relative;
