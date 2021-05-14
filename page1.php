@@ -53,6 +53,57 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
         </div>
+        <h1 class="ex_title1">Link MySQL</h1>
+        <div class="linkSQL">
+<?php
+// 建立MySQL的資料庫連接 
+$dsn = "mysql:dbname=test;host=localhost;port=3306";
+$username = "root";
+try {
+  // 建立MySQL伺服器連接和開啟資料庫 
+  $link = new PDO($dsn, $username);
+  // 指定PDO錯誤模式和錯誤處理
+  $link->setAttribute(PDO::ATTR_ERRMODE, 
+               PDO::ERRMODE_EXCEPTION);
+  try{
+  $link->query('CREATE TABLE account(
+                firstname VARCHAR(30) NOT NULL,
+                lastname VARCHAR(30) NOT NULL,
+                email VARCHAR(50),
+                '
+              );
+  
+  
+  }catch (PDOException $e) {
+    echo ':)';
+  }
+  $link->query("INSERT INTO account (firstname, lastname, email)
+                VALUES ('John', 'Doe', 'john@example.com')");
+  $sql = "SELECT * FROM account";
+  //echo "SQL查詢字串: $sql <br/>";
+  // 送出UTF8編碼的MySQL指令
+  $link->query('SET NAMES utf8');
+  // 送出查詢的SQL指令
+  if ( $result = $link->query($sql) ) { 
+     echo "<br/><b>帳戶資料:</b><hr/>";  // 顯示查詢結果
+     // 取得記錄數
+     $total_records = $result->rowCount();
+     echo "資料筆數: $total_records 筆<br/>"; 
+     while( $row = $result->fetch(PDO::FETCH_ASSOC) ){ 
+        echo $row["email"]."<br/>";
+     } 
+  } 
+} catch (PDOException $e) {
+  echo "連接失敗: " . $e->getMessage();
+}
+
+$link = null;
+
+?>
+        
+        
+        </div>
+
 <hr>
 
 <div class="sys_time">

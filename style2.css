@@ -1,4 +1,9 @@
-.form {
+.form  {
+    font-family: 'Segoe UI',"微軟正黑體";
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.linkSQL{
     font-family: 'Segoe UI',"微軟正黑體";
     padding-left: 5px;
     padding-right: 5px;
