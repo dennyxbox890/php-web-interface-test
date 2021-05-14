@@ -72,7 +72,7 @@ try {
                 email VARCHAR(50),
                 '
               );
-  
+  //gjg
   
   }catch (PDOException $e) {
     echo ':)';
