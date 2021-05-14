@@ -59,27 +59,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // 建立MySQL的資料庫連接 
 $dsn = "mysql:dbname=test;host=localhost;port=3306";
 $username = "root";
-try {
+try{
   // 建立MySQL伺服器連接和開啟資料庫 
   $link = new PDO($dsn, $username);
   // 指定PDO錯誤模式和錯誤處理
   $link->setAttribute(PDO::ATTR_ERRMODE, 
                PDO::ERRMODE_EXCEPTION);
-  try{
-  $link->query('CREATE TABLE account(
-                firstname VARCHAR(30) NOT NULL,
-                lastname VARCHAR(30) NOT NULL,
-                email VARCHAR(50),
-                '
-              );
-  //gjg
   
-  }catch (PDOException $e) {
-    echo ':)';
-  }
-  $link->query("INSERT INTO account (firstname, lastname, email)
+  echo "連接成功<br>";
+}catch (PDOException $e) {
+  echo "連接失敗: " . $e->getMessage(). "<br/>";
+}
+try{
+  $link->query("CREATE TABLE `account` (
+    `firstname` VARCHAR(30) NOT NULL,
+    `lastname` VARCHAR(30) NOT NULL,
+    `email` VARCHAR(50)
+    )
+    ");
+}catch (PDOException $e) {
+  echo '已存在資料表:)<br>';
+}
+try {
+  
+  $link->query("INSERT INTO `account` (`firstname`, `lastname`, `email`)
                 VALUES ('John', 'Doe', 'john@example.com')");
-  $sql = "SELECT * FROM account";
+  $sql = "SELECT * FROM `account`";
   //echo "SQL查詢字串: $sql <br/>";
   // 送出UTF8編碼的MySQL指令
   $link->query('SET NAMES utf8');
@@ -94,9 +99,9 @@ try {
      } 
   } 
 } catch (PDOException $e) {
-  echo "連接失敗: " . $e->getMessage();
+  echo "讀取失敗: " . $e->getMessage(). "<br/>";
 }
-
+$link->query("DELETE FROM `account`");
 $link = null;
 
 ?>
