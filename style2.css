@@ -12,6 +12,7 @@
     text-align: right;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow: visible;
+    
 }
 hr{
     height:1px;
@@ -31,8 +32,8 @@ hr{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     background-color: rgb(223, 223, 223);
     padding-top: 1%;
+    
 }
-
 .paragraph{
     padding-top: 4px;
 }
@@ -62,4 +63,16 @@ hr{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-family: 'Segoe UI',"微軟正黑體";
     font-size: 25px;
+    /*animation: rgb-effect 5s infinite;*/
+}
+/*animation: rgb-effect 1s infinite;*/
+@keyframes rgb-effect {
+    0% { color: red; }
+    14.2857% { color: orange; }
+    28.5714% { color: yellow; }
+    42.8571% { color: rgb(0, 255, 0); }
+    57.1428% { color: cyan; }
+    71.4285% { color: blue; }
+    85.7142% { color: darkorchid; }
+    100% { color: rgb(255, 0, 34); }
 }
