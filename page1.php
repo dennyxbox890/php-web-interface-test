@@ -23,8 +23,8 @@
             <div class="row"></div>
               <div class="column">
                 <a href="page1.php">連結1</a>
-                <a href="#">連結2</a>
-                <a href="#">連結3</a>
+                <a href="phpmyadmin">連結2</a>
+                <a href="pagetemp.php">連結3</a>
                 <a href="#">連結4</a>
               </div>
             </div>
@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="linkSQL">
 <?php
 // 建立MySQL的資料庫連接 
-$dsn = "mysql:dbname=test;host=localhost;port=3306;password=dennymine";
+$dsn = "mysql:dbname=test;host=localhost;port=3306;";
 $username = "dennyxbox890";
 try{
   // 建立MySQL伺服器連接和開啟資料庫 

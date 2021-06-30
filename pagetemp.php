@@ -5,7 +5,9 @@
 <link rel="stylesheet" href="style-p.css">
 </head>
 <body>
-
+<?php
+    phpinfo();
+?>
 
 
 
