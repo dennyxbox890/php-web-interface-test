@@ -83,7 +83,7 @@ try{
 try {
   
   $link->query("INSERT INTO `account` (`firstname`, `lastname`, `email`)
-                VALUES ('John', 'Doe', 'john@example.com')");
+                VALUES ('Josh', 'Doe', 'john@example.com')");
   $sql = "SELECT * FROM `account`";
   //echo "SQL查詢字串: $sql <br/>";
   // 送出UTF8編碼的MySQL指令
