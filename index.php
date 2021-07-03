@@ -2,7 +2,6 @@
 <html>
 <head>
     <meta charset="UTF-8">
-
     <link rel="stylesheet" href="style1.css">
 </head>
 <body>
@@ -22,10 +21,10 @@
             </div>-->
             <div class="row"></div>
               <div class="column">
-                <a href="page1.php">連結1</a>
-                <a href="#">連結2</a>
-                <a href="#">連結3</a>
-                <a href="#">連結4</a>
+                <a href="page1.php">測試頁面</a>
+                <a href="phpmyadmin">phpMyAdmin</a>
+                <a href="pagetemp.php">phpInfo</a>
+                <a href="#">施工中</a>
               </div>
             </div>
           </div>
