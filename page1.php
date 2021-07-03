@@ -64,7 +64,7 @@
         <?php
         // 建立MySQL的資料庫連接 
         $dsn = "mysql:dbname=test;host=localhost;port=3306;";
-        $username = "root";
+        $username = "dennyxbox890";
         try {
           // 建立MySQL伺服器連接和開啟資料庫 
           $link = new PDO($dsn, $username);
@@ -115,7 +115,7 @@
             }
           }
           if($d>=5){
-            $link->query("DELETE FROM `account`");
+            $link->query("DROP TABLE `account`");
             $link = null;
           }
         } catch (PDOException $e) {
